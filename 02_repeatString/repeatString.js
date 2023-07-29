@@ -5,8 +5,9 @@ const repeatString = function(string , num) {
     return "ERROR";
  } 
  let newString = '';  
- for (let i=0; i < num; i++){
-    newString += string;     
+ while(num > 0){
+    newString += string; 
+    num--;    
  }
  return newString;
 };
